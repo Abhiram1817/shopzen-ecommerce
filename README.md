@@ -22,56 +22,6 @@ ShopZen is a complete e-commerce platform where users can browse products, add t
 - Place orders and view order history
 - Fully responsive UI
 
-## 📂 Project Structure
-shopzen-ecommerce/
-
-├── backend/
-
-│   ├── config/
-
-│   │   └── db.js
-
-│   ├── routes/
-
-│   │   ├── auth.js
-
-│   │   ├── products.js
-
-│   │   ├── cart.js
-
-│   │   └── orders.js
-
-│   ├── .env
-
-│   └── server.js
-
-├── frontend/
-
-│   └── src/
-
-│       ├── components/
-
-│       │   └── Navbar.js
-
-│       ├── pages/
-
-│       │   ├── Home.js
-
-│       │   ├── Login.js
-
-│       │   ├── Register.js
-
-│       │   ├── ProductDetail.js
-
-│       │   ├── Cart.js
-
-│       │   └── Orders.js
-
-│       ├── App.js
-
-│       └── index.js
-
-└── README.md
 ## ⚙️ How to Run Locally
 
 **1. Clone the repository**
@@ -82,21 +32,12 @@ cd shopzen-ecommerce
 
 **2. Setup Database**
 
-Create a MySQL database and run:
-```sql
-CREATE DATABASE ecommerce;
-USE ecommerce;
-```
-Then create the tables for users, products, cart and orders.
+Create a MySQL database and run the table scripts for users, products, cart and orders.
 
 **3. Setup Backend**
 ```bash
 cd backend
 npm install
-```
-Create a `.env` file:
-Run the backend:
-```bash
 node server.js
 ```
 
@@ -108,6 +49,3 @@ npm start
 ```
 
 Visit `http://localhost:3000` to view the app.
-
-## 📃 License
-MIT
